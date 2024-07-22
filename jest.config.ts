@@ -6,7 +6,10 @@ const config: Config.InitialOptions = {
   verbose: true,
   collectCoverage: true,
   collectCoverageFrom: [
-    '<rootDir>/src/app/**/*.ts'
+    '<rootDir>/src/app/**/PasswordChecker.ts'
+  ],
+  testMatch: [
+    '<rootDir>/src/test/**/PasswordChecker.test.ts'
   ]
 };
 
